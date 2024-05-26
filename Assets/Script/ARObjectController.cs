@@ -12,13 +12,13 @@ public class ARObjectController : MonoBehaviour
 
     private ARRaycastManager arRaycastManager;
     private List<ARRaycastHit> hits = new List<ARRaycastHit>(); 
-
-    private GameObject arObject;
     private Animator arAni;
     private Touch touch;
     private Vector2 fingerPosition;
     private float touchDuration = 0f;
-    private bool isTouch = false;
+
+    public GameObject arObject;
+    public bool isTouch = false;
 
     // Start is called before the first frame update
     void Start()
@@ -43,7 +43,10 @@ public class ARObjectController : MonoBehaviour
             }
         }
         else {
+            GetComponent<ARObjectAction>().isMove = false;
             arAni = arObject.GetComponent<Animator>();
+            arAni.SetBool("Hi", false);
+            arAni.SetBool("Walk", false);
             Ray ray = arCamera.ScreenPointToRay(touch.position);
             RaycastHit hit;
             if (Physics.Raycast(ray, out hit))
@@ -87,6 +90,7 @@ public class ARObjectController : MonoBehaviour
                                 if (swipeDistanceY > 200f && swipeDistanceY > swipeDistanceX && fingerPosition.y - touch.position.y < 0)
                                 {
                                     arAni.SetTrigger("Jump");
+                                    GetComponent<ARObjectAction>().aniDuration = 0;
                                 }
                             }
                             touchDuration = 0f;
@@ -97,6 +101,7 @@ public class ARObjectController : MonoBehaviour
                 }
                 if (touch.tapCount >= 2) {
                     arAni.Play("Dance");
+                    GetComponent<ARObjectAction>().aniDuration = 0;
                     isTouch = false;
                 }
 

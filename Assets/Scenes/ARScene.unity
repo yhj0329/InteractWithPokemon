@@ -791,6 +791,7 @@ GameObject:
   - component: {fileID: 1787833482}
   - component: {fileID: 1787833487}
   - component: {fileID: 1787833486}
+  - component: {fileID: 1787833488}
   m_Layer: 0
   m_Name: XR Origin
   m_TagString: Untagged
@@ -868,6 +869,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f1e7afe22b5b443f4ac6a9f93d5d53b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  arCamera: {fileID: 393793557}
+  arObject: {fileID: 0}
+--- !u!114 &1787833488
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1787833481}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 260446ab15aa2488380a208b45e56334, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   arCamera: {fileID: 393793557}
