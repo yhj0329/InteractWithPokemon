@@ -14,7 +14,9 @@ public class ARObjectController : MonoBehaviour
     private List<ARRaycastHit> hits = new List<ARRaycastHit>(); 
 
     private GameObject arObject;
+    private Animator arAni;
     private Touch touch;
+    private Vector2 fingerPosition;
     private float touchDuration = 0f;
     private bool isTouch = false;
 
@@ -41,6 +43,7 @@ public class ARObjectController : MonoBehaviour
             }
         }
         else {
+            arAni = arObject.GetComponent<Animator>();
             Ray ray = arCamera.ScreenPointToRay(touch.position);
             RaycastHit hit;
             if (Physics.Raycast(ray, out hit))
@@ -50,40 +53,53 @@ public class ARObjectController : MonoBehaviour
                     isTouch = true;
                 }
             }
-            switch (touch.phase) {
-                case TouchPhase.Began:
-                    
-                    break;
-
-                case TouchPhase.Stationary:
-                    if (isTouch) 
+            if (isTouch) {
+                if (touch.tapCount == 1) {
+                    switch (touch.phase)
                     {
-                        touchDuration += Time.deltaTime;
-                    }
-                    break;
-
-                case TouchPhase.Moved:
-                    if (isTouch) 
-                    {
-                        touchDuration += Time.deltaTime;
-
-                        if (touchDuration >= 1f)
-                        {
-                            if (arRaycastManager.Raycast(touch.position, hits, TrackableType.PlaneWithinPolygon))
+                        case TouchPhase.Began:
+                            fingerPosition = touch.position;
+                            break;
+                        case TouchPhase.Stationary:
+                            touchDuration += Time.deltaTime;
+                            if (touchDuration >= 0.5f)
                             {
-                                var hitPose = hits[0].pose;
-                                arObject.transform.position = hitPose.position;
-                                arObject.transform.rotation = Quaternion.Euler(hitPose.rotation.eulerAngles - new Vector3(0, 180f, 0));
+                                arAni.SetBool("Falling", true);
                             }
-                        }
-                    }
-                    
-                    break;
+                            break;
 
-                case TouchPhase.Ended:
-                    touchDuration = 0f;
+                        case TouchPhase.Moved:
+                            if (touchDuration >= 0.5f)
+                            {
+                                if (arRaycastManager.Raycast(touch.position, hits, TrackableType.PlaneWithinPolygon))
+                                {
+                                    var hitPose = hits[0].pose;
+                                    arObject.transform.position = hitPose.position;
+                                    arObject.transform.rotation = Quaternion.Euler(hitPose.rotation.eulerAngles - new Vector3(0, 180f, 0));
+                                }
+                            }
+                            break;
+
+                        case TouchPhase.Ended:
+                            if (touchDuration < 0.5f) {
+                                float swipeDistanceX = Mathf.Abs(fingerPosition.x - touch.position.x);
+                                float swipeDistanceY = Mathf.Abs(fingerPosition.y - touch.position.y);
+                                if (swipeDistanceY > 200f && swipeDistanceY > swipeDistanceX && fingerPosition.y - touch.position.y < 0)
+                                {
+                                    arAni.SetTrigger("Jump");
+                                }
+                            }
+                            touchDuration = 0f;
+                            isTouch = false;
+                            arAni.SetBool("Falling", false);
+                            break;
+                    }
+                }
+                if (touch.tapCount >= 2) {
+                    arAni.Play("Dance");
                     isTouch = false;
-                    break;
+                }
+
             }
         }
     }
