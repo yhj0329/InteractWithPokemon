@@ -22,5 +22,6 @@ public class UIBtn : MonoBehaviour
         SelectUI.SetActive(false);
         text.text = "Click on the plane to meet Pokémon";
         GameManager.instance.arObjIndex = objIndex;
+        GameManager.instance.isSelect = false;
     }
 }

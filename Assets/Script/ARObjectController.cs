@@ -19,8 +19,6 @@ public class ARObjectController : MonoBehaviour
     private Touch touch;
     private Vector2 fingerPosition;
     private float touchDuration = 0f;
-    private GraphicRaycaster graphicRaycaster;
-    private EventSystem eventSystem;
 
     public GameObject arObject;
     public GameObject ballUI;
@@ -36,6 +34,8 @@ public class ARObjectController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (GameManager.instance.isSelect) return;
+
         if (Input.touchCount == 0) return;
         else {
             touch = Input.GetTouch(0);
