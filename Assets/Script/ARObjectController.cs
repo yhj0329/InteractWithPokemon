@@ -1,7 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.EventSystems;
 using UnityEngine.XR.ARFoundation;
 using UnityEngine.XR.ARSubsystems;
 
@@ -16,8 +19,12 @@ public class ARObjectController : MonoBehaviour
     private Touch touch;
     private Vector2 fingerPosition;
     private float touchDuration = 0f;
+    private GraphicRaycaster graphicRaycaster;
+    private EventSystem eventSystem;
 
     public GameObject arObject;
+    public GameObject ballUI;
+    public TextMeshProUGUI textUI;
     public bool isTouch = false;
 
     // Start is called before the first frame update
@@ -39,7 +46,9 @@ public class ARObjectController : MonoBehaviour
             {
                 var hitPose = hits[0].pose;
                 Vector3 hitRotation = hitPose.rotation.eulerAngles - new Vector3(0, 180f, 0);
-                arObject = Instantiate(arRaycastManager.raycastPrefab, hitPose.position, Quaternion.Euler(hitRotation));
+                arObject = Instantiate(GameManager.instance.arObject[GameManager.instance.arObjIndex], hitPose.position, Quaternion.Euler(hitRotation));
+                ballUI.SetActive(true);
+                textUI.text = "";
             }
         }
         else {

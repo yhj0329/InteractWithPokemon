@@ -14,7 +14,6 @@ public class ARObjectAction : MonoBehaviour
     private GameObject arObject;
     private Animator arAni;
     private Vector3 targetPosition;
-    private Quaternion targetRotation;
 
     public bool isMove = false;
     public float aniDuration = 0f;
@@ -55,7 +54,6 @@ public class ARObjectAction : MonoBehaviour
         {
             var hitPose = hits[0].pose;
             targetPosition = hitPose.position;
-            targetRotation = hitPose.rotation;
             isMove = true;
             arAni.SetBool("Walk", true);
         }
