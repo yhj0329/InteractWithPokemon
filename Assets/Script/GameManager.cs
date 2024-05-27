@@ -6,6 +6,7 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
     public bool isRemove = false;
+    public bool isSelect = true;
     public int arObjIndex = 0;
     public GameObject[] arObject;
     public GameObject selectUI;
@@ -27,5 +28,6 @@ public class GameManager : MonoBehaviour
     public void PoketballHit() {
         selectUI.SetActive(true);
         textUI.text = "Select Pokemon";
+        isSelect = true;
     }
 }
