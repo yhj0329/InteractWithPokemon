@@ -9,6 +9,14 @@ public class Pokemon : MonoBehaviour
     private float time = 0;
     private Collision collision;
 
+    public GameObject[] effects;
+
+    void Awake() 
+    {
+        GameObject obj = Instantiate(effects[0], transform.position, transform.rotation);
+        Destroy(obj, 3f);
+    }
+
     void Update() 
     {
         if (isHit) 
@@ -19,6 +27,8 @@ public class Pokemon : MonoBehaviour
                 Destroy(this.gameObject);
                 Destroy(collision.gameObject);
                 GameManager.instance.PoketballHit();
+                GameObject obj = Instantiate(effects[1], transform.position, transform.rotation);
+                Destroy(obj, 2f);
             }
         }
     }

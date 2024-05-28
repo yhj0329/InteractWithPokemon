@@ -29,7 +29,7 @@ public class ARObjectAction : MonoBehaviour
         arAni = arObject.GetComponent<Animator>();
         aniDuration += Time.deltaTime;
         if(aniDuration >= 4f && !isMove && !GetComponent<ARObjectController>().isTouch) {
-            switch(Random.Range(0, 3)) {
+            switch(Random.Range(0, 5)) {
                 case 0:
                     aniDuration = 0;
                     break;
@@ -39,6 +39,14 @@ public class ARObjectAction : MonoBehaviour
                     break;
                 case 2:
                     SetRandomPosition();
+                    aniDuration = 0;
+                    break;
+                case 3:
+                    arAni.SetTrigger("Cheering");
+                    aniDuration = 0;
+                    break;
+                case 4:
+                    arAni.SetTrigger("Clapping");
                     aniDuration = 0;
                     break;
             }
