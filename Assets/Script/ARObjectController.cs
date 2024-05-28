@@ -19,6 +19,7 @@ public class ARObjectController : MonoBehaviour
     private Touch touch;
     private Vector2 fingerPosition;
     private float touchDuration = 0f;
+    private GameObject obj;
 
     public GameObject arObject;
     public GameObject ballUI;
@@ -96,7 +97,7 @@ public class ARObjectController : MonoBehaviour
                             if (touchDuration < 0.5f) {
                                 float swipeDistanceX = Mathf.Abs(fingerPosition.x - touch.position.x);
                                 float swipeDistanceY = Mathf.Abs(fingerPosition.y - touch.position.y);
-                                if (swipeDistanceY > 200f && swipeDistanceY > swipeDistanceX && fingerPosition.y - touch.position.y < 0)
+                                if (swipeDistanceY > 200f && swipeDistanceY > swipeDistanceX && fingerPosition.y < touch.position.y)
                                 {
                                     arAni.SetTrigger("Jump");
                                     GetComponent<ARObjectAction>().aniDuration = 0;
@@ -109,11 +110,14 @@ public class ARObjectController : MonoBehaviour
                     }
                 }
                 if (touch.tapCount >= 2) {
-                    arAni.Play("Dance");
-                    GetComponent<ARObjectAction>().aniDuration = 0;
+                    if (!obj) {
+                        arAni.Play("Dance");
+                        obj = Instantiate(GameManager.instance.arObject[GameManager.instance.arObjIndex].GetComponent<Pokemon>().effects[0], arObject.transform.position, transform.rotation);
+                        Destroy(obj, 6f);
+                        GetComponent<ARObjectAction>().aniDuration = 0;
+                    }
                     isTouch = false;
                 }
-
             }
         }
     }
