@@ -27,7 +27,7 @@ public class GameManager : MonoBehaviour
 
     public void PoketballHit() {
         selectUI.SetActive(true);
-        textUI.text = "Select Pokemon";
+        textUI.text = "Select\nPokemon";
         isSelect = true;
     }
 }

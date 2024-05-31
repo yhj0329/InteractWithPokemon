@@ -14,13 +14,13 @@ public class UIBtn : MonoBehaviour
 
     public void PoketballClick() {
         Btn.SetActive(false);
-        text.text = "Use your touch to throw balls at Pokemon";
+        text.text = "Use your touch\nto throw a ball\nat Pokemon";
         GameManager.instance.isRemove = true;
     }
 
     public void PokemonClick() {
         SelectUI.SetActive(false);
-        text.text = "Click on the plane to meet Pokémon";
+        text.text = "Click\non the plane\nto meet\nPokemon";
         GameManager.instance.arObjIndex = objIndex;
         GameManager.instance.isSelect = false;
     }
