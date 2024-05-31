@@ -48,6 +48,7 @@ public class ARObjectController : MonoBehaviour
                 var hitPose = hits[0].pose;
                 Vector3 hitRotation = hitPose.rotation.eulerAngles - new Vector3(0, 180f, 0);
                 arObject = Instantiate(GameManager.instance.arObject[GameManager.instance.arObjIndex], hitPose.position, Quaternion.Euler(hitRotation));
+                SoundManager.instance.PlaySummonSound(GameManager.instance.arObjIndex);
                 ballUI.SetActive(true);
                 textUI.text = "";
             }
@@ -111,6 +112,7 @@ public class ARObjectController : MonoBehaviour
                 }
                 if (touch.tapCount >= 2) {
                     if (!obj) {
+                        SoundManager.instance.PlayDanceSound(GameManager.instance.arObjIndex);
                         arAni.Play("Dance");
                         obj = Instantiate(GameManager.instance.arObject[GameManager.instance.arObjIndex].GetComponent<Pokemon>().effects[0], arObject.transform.position, transform.rotation);
                         Destroy(obj, 6f);

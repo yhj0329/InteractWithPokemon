@@ -38,6 +38,7 @@ public class Pokemon : MonoBehaviour
         {
             collision = other;
             GetComponent<Animator>().SetTrigger("Hit");
+            SoundManager.instance.PlayPokeballSound();
             isHit = true;
             GameManager.instance.isRemove = false;
         }
