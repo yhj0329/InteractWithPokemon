@@ -22,6 +22,11 @@ public class UIBtn : MonoBehaviour
         SelectUI.SetActive(false);
         text.text = "Click\non the plane\nto meet\nPokemon";
         GameManager.instance.arObjIndex = objIndex;
+        Invoke("isSelect", 0.5f);
+    }
+
+    private void isSelect()
+    {
         GameManager.instance.isSelect = false;
     }
 }
