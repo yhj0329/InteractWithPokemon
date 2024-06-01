@@ -191,7 +191,7 @@ https://github.com/yhj0329/InteractWithPokemon/assets/102153681/fb4629b8-979f-4f
 다음 방식을 통해 AR 평면을 모바일에서 탐색하여 Prefabs를 만들 수 있다.
 
 1. Unity Hierarchy 창에서 우클릭 한다.  
-![img](https://github.com/yhj0329/InteractWithPokemon/assets/102153681/232e3338-534d-47d7-9b74-30668eba2296)
+   <img width="465" alt="image" src="https://github.com/yhj0329/InteractWithPokemon/assets/102153681/8eebd474-4a65-439a-8e54-5f7462fdba58">
 
 3. XR 탭에 들어간다
 4. AR Session, AR Default Plane, XR Origin을 클릭해서 GameObject를 추가한다.
