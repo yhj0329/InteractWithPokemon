@@ -9,6 +9,10 @@ AR 환경에서 Pokemon과 상호작용해보세요!
 
 [**설치 파일**](https://github.com/yhj0329/InteractWithPokemon/tree/main/ExecutionFile)
 
+----
+
+----
+
 ## 사용법
 카메라 권한을 반드시 허용해야 합니다!
 1. 포켓몬을 선택합니다.
@@ -22,9 +26,13 @@ AR 환경에서 Pokemon과 상호작용해보세요!
 5. 포켓몬 볼을 던져 포켓몬을 소환 해제합니다.
 6. 1번 반복
 
+----
+
+----
+
 ## 시연 영상
 
-#### 전체 영상
+### 전체 영상
 - 피카츄
 
 https://github.com/yhj0329/InteractWithPokemon/assets/102153681/7ee2e78f-7533-4ee2-8e05-4be2d5e1b4d7
@@ -33,7 +41,23 @@ https://github.com/yhj0329/InteractWithPokemon/assets/102153681/7ee2e78f-7533-4e
 
 https://github.com/yhj0329/InteractWithPokemon/assets/102153681/05264175-cbfc-4164-92e3-87e40a243aef
 
-#### 부분 영상
+### 부분 영상
+
+목차
+1. 포켓몬 선택
+2. AR Plane 찾고 포켓몬 소환
+3. 포켓몬 소환 해제
+4. Occlusion 적용
+5. 터치를 통한 상호작용(연속 두번 클릭)
+6. 터치를 통한 상호작용(위로 슬라이드)
+7. 터치를 통한 상호작용(1초 이상 터치)
+8. 포켓몬 활동(이동)
+9. 포켓몬 활동(인사)
+10. 포켓몬 활동(박수)
+11. 포켓몬 활동(응원)
+12. 음량 조절
+------------
+
 - 포켓몬 선택
 
 ![포켓몬 선택](https://github.com/yhj0329/InteractWithPokemon/assets/102153681/5063e8a6-6ec9-4dfb-bd66-941180cb6490)
@@ -147,10 +171,20 @@ https://github.com/yhj0329/InteractWithPokemon/assets/102153681/ec253258-425b-4e
 
 https://github.com/yhj0329/InteractWithPokemon/assets/102153681/fb4629b8-979f-4fcc-93f9-c5e1c0bee0db
 
+----
+
+----
 
 ## 중요 기능 설명
 
-### AR Plane 탐색
+목차
+1. AR Plane 탐색 및 생성(AR 환경 세팅)
+2. AR Object 생성
+3. Occlusion 적용
+4. AR Object 정확한 터치 감지
+5. UI 클릭시 다른 기능 사용 방지
+
+### AR Plane 탐색 및 생성(AR 환경 세팅)
 다음 방식을 통해 AR 평면을 모바일에서 탐색하여 Prefabs를 만들 수 있다.
 
 1. Unity Hierarchy 창에서 우클릭 한다.  
