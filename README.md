@@ -7,7 +7,7 @@ AR 환경에서 Pokemon과 상호작용해보세요!
 또한 포켓몬에게 점프와 춤추기를 시킬 수 있어요!  
 포켓몬은 스스로 돌아다니고 인사합니다. 물론 박수도 치고 응원도 해요!
 
-설치 파일 : 
+[**설치 파일**](https://github.com/yhj0329/InteractWithPokemon/tree/main/ExecutionFile)
 
 ## 사용법
 카메라 권한을 반드시 허용해야 합니다!
