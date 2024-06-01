@@ -51,9 +51,13 @@ https://github.com/yhj0329/InteractWithPokemon/assets/102153681/05264175-cbfc-41
 
 - 포켓몬 소환 해제
 
-https://github.com/yhj0329/InteractWithPokemon/assets/102153681/e7ce7b94-91a8-41ef-8a90-aac8261a6ceb
+    - 피카츄
+    
+    https://github.com/yhj0329/InteractWithPokemon/assets/102153681/e7ce7b94-91a8-41ef-8a90-aac8261a6ceb
+    
+    - 파이리
 
-https://github.com/yhj0329/InteractWithPokemon/assets/102153681/36cad70b-016b-4e5a-b0ec-2f03b6677ed0
+    https://github.com/yhj0329/InteractWithPokemon/assets/102153681/36cad70b-016b-4e5a-b0ec-2f03b6677ed0
 
 
 - Occlusion 적용
@@ -63,56 +67,84 @@ https://github.com/yhj0329/InteractWithPokemon/assets/102153681/ec253258-425b-4e
 
 - 터치를 통한 상호작용 (연속 두번 클릭)  
 **객체를 정확히 터치해야 함(하얀색 점이 클릭을 표시한 것)**
-  
-https://github.com/yhj0329/InteractWithPokemon/assets/102153681/0f35197b-3466-40ed-af38-be7c8327226e
 
-https://github.com/yhj0329/InteractWithPokemon/assets/102153681/771eeb1d-2100-4523-b340-03e95d4fa34a
+    - 피카츄
+    
+    https://github.com/yhj0329/InteractWithPokemon/assets/102153681/0f35197b-3466-40ed-af38-be7c8327226e
+    
+    - 파이리
+
+    https://github.com/yhj0329/InteractWithPokemon/assets/102153681/771eeb1d-2100-4523-b340-03e95d4fa34a
 
 
 - 터치를 통한 상호작용 (위로 슬라이드)  
 **객체를 정확히 터치해야 함(하얀색 점이 클릭을 표시한 것)**
-  
-https://github.com/yhj0329/InteractWithPokemon/assets/102153681/9f1eb625-00ff-4383-9265-f9919432d6d3
 
-https://github.com/yhj0329/InteractWithPokemon/assets/102153681/12d83899-7054-4a52-9a71-d5ec5fa09b79
+    - 피카츄
+    
+    https://github.com/yhj0329/InteractWithPokemon/assets/102153681/9f1eb625-00ff-4383-9265-f9919432d6d3
+    
+    - 파이리
+
+    https://github.com/yhj0329/InteractWithPokemon/assets/102153681/12d83899-7054-4a52-9a71-d5ec5fa09b79
 
 
 - 터치를 통한 상호작용 (1초 이상 터치)  
 **객체를 정확히 터치해야 함(하얀색 점이 클릭을 표시한 것)**
-  
-https://github.com/yhj0329/InteractWithPokemon/assets/102153681/e4fcb01a-d0b1-4449-b2e3-3a54d65ae8bb
 
-https://github.com/yhj0329/InteractWithPokemon/assets/102153681/5fffe38b-deb8-4c52-871a-16f7e407a236
+    - 피카츄
+    
+    https://github.com/yhj0329/InteractWithPokemon/assets/102153681/e4fcb01a-d0b1-4449-b2e3-3a54d65ae8bb
+    
+    - 파이리
+
+    https://github.com/yhj0329/InteractWithPokemon/assets/102153681/5fffe38b-deb8-4c52-871a-16f7e407a236
 
 
 - 포켓몬 활동(이동)
-  
-https://github.com/yhj0329/InteractWithPokemon/assets/102153681/8d9e22a5-c7d0-4312-97f1-9595ed4ae9d1
 
-https://github.com/yhj0329/InteractWithPokemon/assets/102153681/35190c93-b504-405c-86d5-9420dd79b1e8
+    - 피카츄
+    
+    https://github.com/yhj0329/InteractWithPokemon/assets/102153681/8d9e22a5-c7d0-4312-97f1-9595ed4ae9d1
+    
+    - 파이리
+
+    https://github.com/yhj0329/InteractWithPokemon/assets/102153681/35190c93-b504-405c-86d5-9420dd79b1e8
 
 
 - 포켓몬 활동(인사)
-  
-https://github.com/yhj0329/InteractWithPokemon/assets/102153681/2780880f-27e4-4023-af0f-b8b7239bbf76
 
-https://github.com/yhj0329/InteractWithPokemon/assets/102153681/a17f7119-1e10-456d-9970-f4ec9efa43b8
+    - 피카츄
+    
+    https://github.com/yhj0329/InteractWithPokemon/assets/102153681/2780880f-27e4-4023-af0f-b8b7239bbf76
+    
+    - 파이리
+
+    https://github.com/yhj0329/InteractWithPokemon/assets/102153681/a17f7119-1e10-456d-9970-f4ec9efa43b8
 
 
 - 포켓몬 활동(박수)
-  
-https://github.com/yhj0329/InteractWithPokemon/assets/102153681/8fc243dc-3a37-4ff2-93dc-4a36d86673ab
 
-https://github.com/yhj0329/InteractWithPokemon/assets/102153681/1400f0f1-4f97-4d9c-aaba-88e0a24eb78e
+    - 피카츄
+    
+    https://github.com/yhj0329/InteractWithPokemon/assets/102153681/8fc243dc-3a37-4ff2-93dc-4a36d86673ab
+    
+    - 파이리
+
+    https://github.com/yhj0329/InteractWithPokemon/assets/102153681/1400f0f1-4f97-4d9c-aaba-88e0a24eb78e
 
 - 포켓몬 활동(응원)
-  
-https://github.com/yhj0329/InteractWithPokemon/assets/102153681/2f243aa5-5e60-41bb-8ea3-46ff0297cb2b
 
-https://github.com/yhj0329/InteractWithPokemon/assets/102153681/1772b0b5-233a-4045-a971-3274b7445e0d
+    - 피카츄
+    
+    https://github.com/yhj0329/InteractWithPokemon/assets/102153681/2f243aa5-5e60-41bb-8ea3-46ff0297cb2b
+    
+    - 파이리
+
+    https://github.com/yhj0329/InteractWithPokemon/assets/102153681/1772b0b5-233a-4045-a971-3274b7445e0d
 
 - 음량 조절
-  
+
 https://github.com/yhj0329/InteractWithPokemon/assets/102153681/fb4629b8-979f-4fcc-93f9-c5e1c0bee0db
 
 
