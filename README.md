@@ -44,21 +44,28 @@ https://github.com/yhj0329/InteractWithPokemon/assets/102153681/7ee2e78f-7533-4e
 
 https://github.com/yhj0329/InteractWithPokemon/assets/102153681/05264175-cbfc-4164-92e3-87e40a243aef
 
+- Occlusion 적용
+
+https://github.com/yhj0329/InteractWithPokemon/assets/102153681/ec253258-425b-4e22-b40f-e4658284db9f
+
+- 음량 조절
+
+https://github.com/yhj0329/InteractWithPokemon/assets/102153681/fb4629b8-979f-4fcc-93f9-c5e1c0bee0db
+
+
 ### 부분 영상
 
 목차
 1. 포켓몬 선택
 2. AR Plane 찾고 포켓몬 소환
 3. 포켓몬 소환 해제
-4. Occlusion 적용
-5. 터치를 통한 상호작용(연속 두번 클릭)
-6. 터치를 통한 상호작용(위로 슬라이드)
-7. 터치를 통한 상호작용(1초 이상 터치)
-8. 포켓몬 활동(이동)
-9. 포켓몬 활동(인사)
-10. 포켓몬 활동(박수)
-11. 포켓몬 활동(응원)
-12. 음량 조절
+4. 터치를 통한 상호작용(연속 두번 클릭)
+5. 터치를 통한 상호작용(위로 슬라이드)
+6. 터치를 통한 상호작용(1초 이상 터치)
+7. 포켓몬 활동(이동)
+8. 포켓몬 활동(인사)
+9. 포켓몬 활동(박수)
+10. 포켓몬 활동(응원)
 ------------
 
 - 포켓몬 선택
@@ -85,11 +92,6 @@ https://github.com/yhj0329/InteractWithPokemon/assets/102153681/05264175-cbfc-41
     - 파이리
 
     https://github.com/yhj0329/InteractWithPokemon/assets/102153681/36cad70b-016b-4e5a-b0ec-2f03b6677ed0
-
-
-- Occlusion 적용
-
-https://github.com/yhj0329/InteractWithPokemon/assets/102153681/ec253258-425b-4e22-b40f-e4658284db9f
 
 
 - 터치를 통한 상호작용 (연속 두번 클릭)  
@@ -169,10 +171,6 @@ https://github.com/yhj0329/InteractWithPokemon/assets/102153681/ec253258-425b-4e
     - 파이리
 
     https://github.com/yhj0329/InteractWithPokemon/assets/102153681/1772b0b5-233a-4045-a971-3274b7445e0d
-
-- 음량 조절
-
-https://github.com/yhj0329/InteractWithPokemon/assets/102153681/fb4629b8-979f-4fcc-93f9-c5e1c0bee0db
 
 ----
 
